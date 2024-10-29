@@ -34,10 +34,10 @@ const resultado = computed(() => {
           <div class="row">
             <div class="col-md-1"></div>
             <div class="col-md-3 mt-3 mt-sm-0">
-              <input class="form-control" type="number" v-model.number="estado.numero1">
+              <input class="form-control text-center" type="number" v-model.number="estado.numero1">
             </div>
             <div class="col-md-4 mt-3 mt-sm-0 ">
-              <select class="form-control" v-model="estado.operacao">
+              <select class="form-control text-center" v-model="estado.operacao">
                 <option value="+">Somar ( + )</option>
                 <option value="-">Subtrair ( - )</option>
                 <option value="*">Multiplicar ( x )</option>
@@ -45,7 +45,7 @@ const resultado = computed(() => {
               </select>
             </div>
             <div class="col-md-3">
-              <input class="form-control mt-3 mt-sm-0 " type="number" v-model.number="estado.numero2">
+              <input class="form-control mt-3 mt-sm-0 text-center " type="number" v-model.number="estado.numero2">
             </div>
             <div class="col-md-1"></div>
           </div>
@@ -79,4 +79,5 @@ h1 {
   height: 100vh;
   max-width: 100%;
 }
+
 </style>
