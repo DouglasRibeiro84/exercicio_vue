@@ -32,7 +32,8 @@ const resultado = computed(() => {
       <form class="mt-4">
         <div class="caluladora d-flex justify-content-center">
           <div class="row">
-            <div class="col-md-4 mt-3 mt-sm-0">
+            <div class="col-md-1"></div>
+            <div class="col-md-3 mt-3 mt-sm-0">
               <input class="form-control" type="number" v-model.number="estado.numero1">
             </div>
             <div class="col-md-4 mt-3 mt-sm-0 ">
@@ -43,9 +44,10 @@ const resultado = computed(() => {
                 <option value="/">Dividir ( / )</option>
               </select>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
               <input class="form-control mt-3 mt-sm-0 " type="number" v-model.number="estado.numero2">
             </div>
+            <div class="col-md-1"></div>
           </div>
         </div>
         <div class="row">
