@@ -25,10 +25,10 @@ const resultado = computed(() => {
 
 </script>
 
-<template>
-  <div class="container mt-5 p-5">
-    <header class="p-5 mb-4 mt-4 bg-secondary rounded-3 text-center">
-      <h1 class="text-light">Calculadora</h1>
+<template class="body">
+  <div class="container  p-5 b-black" data-bs-theme=dark>
+    <header class="p-5 mb-4 mt-4 rounded-3 text-center">
+      <h1 class="text-light">Calculadora Simples</h1>
       <form class="mt-4">
         <div class="caluladora d-flex justify-content-center">
           <div class="row">
@@ -49,9 +49,11 @@ const resultado = computed(() => {
           </div>
         </div>
         <div class="row">
-          <div class="col-md-12 mt-5 ">
-            <span class="form-control fw-bold">Resultado:  {{ resultado }} </span>
+          <div class="col-md-3 mt-5 "></div>
+          <div class="col-md-6 mt-5 ">
+            <span class="form-control fw-bold">Resultado: {{ resultado }} </span>
           </div>
+          <div class="col-md-3 mt-5 "></div>
         </div>
       </form>
     </header>
@@ -59,6 +61,20 @@ const resultado = computed(() => {
 </template>
 
 <style scoped>
+header {
+  border: 3px double black;
+  background-color: rgba(128, 128, 128, 0.274);
+}
 
+h1 {
+  text-shadow: 10px 10px 8px black;
+}
 
+.container {
+  background-image: url(https://cdn.pixabay.com/photo/2020/10/27/08/00/mountains-5689938_640.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  max-width: 100%;
+}
 </style>
