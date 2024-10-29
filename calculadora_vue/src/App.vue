@@ -27,7 +27,7 @@ const resultado = computed(() => {
 
 <template class="body">
   <div class="container  p-5 b-black" data-bs-theme=dark>
-    <header class="p-5 mb-4 mt-4 rounded-3 text-center">
+    <header class=" p-md-5 p-3  mb-4 mt-4 rounded-3 text-center">
       <h1 class="text-light">Calculadora Simples</h1>
       <form class="mt-4">
         <div class="caluladora d-flex justify-content-center">
@@ -78,6 +78,10 @@ h1 {
   background-repeat: no-repeat;
   height: 100vh;
   max-width: 100%;
+}
+
+span{
+  width: 100%;
 }
 
 </style>
